@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vadim Ryhgaev](https://up.htmlacademy.ru/htmlcss/21/user/666273).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Туров] (https://htmlacademy.ru/profile/turov).
 
 ---
 
