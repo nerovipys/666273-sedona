@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page">
 <div class="wrapper">
   <header class="main-header">
     <nav class="main-navigation">
-      <a>
-        <img>
+      <a href="index.html" class="main-logo">
+        <img src="">
       </a>
-      <ul class="site-navigation">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li class="site-navigation-current"><a href="#">Гостинницы</a></li>
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
+        <li class="nav-item"><a href="#">Карта штата</a></li>
+        <li class="nav-item current"><a class="nav-link" href="#">Гостинницы</a></li>
       </ul>
     </nav>
   </header>
@@ -39,108 +39,110 @@
 
   </div>
   <ul class="catalog-list">
-    <li>
+    <li class="catalog-item">
       <figure>
-        <img>
-        <figcaption>
-          <div>
-            <h3>
-              <a>
-              </a>
+        <img class="catalog-item-image">
+        <figcaption class="catalog-item-content">
+          <div class="catalog-item-description">
+            <h3 class="catalog-item-title">
+              <a>Amara Resort & Spa</a>
             </h3>
-            <div>
-              <span></span>
-              <span></span>
+            <div class="catalog-item-information">
+              <span class="catalog-item-type">Гостинница</span>
+              <span class="catalog-item-price">От 4000 Р.</span>
             </div>
-            <div>
-              <a></a>
-              <a></a>
+            <div class="catalog-item-bottom">
+              <a class="catalog-item-subscription" href="">Подробнее</a>
+              <a class="catalog-item-btn" href="">Забронировать</a>
             </div>
           </div>
 
-          <div>
-            <ul>
+          <div class="catalog-item-rate">
+            <ul class="catalog-item-rate stats">
               <li></li>
-
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
             </ul>
-            <span>
-
-            </span>
+            <span class="catalog-item-rate position">Рейтинг: 8,5</span>
           </div>
         </figcaption>
       </figure>
     </li>
+    <li class="catalog-item">
+      <figure>
+        <img class="catalog-item-image">
+        <figcaption class="catalog-item-content">
+          <div class="catalog-item-description">
+            <h3 class="catalog-item-title">
+              <a>Desert quail inn</a>
+            </h3>
+            <div class="catalog-item-information">
+              <span class="catalog-item-type">Мотель</span>
+              <span class="catalog-item-price">От 3000 Р.</span>
+            </div>
+            <div class="catalog-item-bottom">
+              <a class="catalog-item-subscription" href="">Подробнее</a>
+              <a class="catalog-item-btn" href="">Забронировать</a>
+            </div>
+          </div>
 
-      <h3>
-        <a href="">
-          <span class="catalog-category">Amara Resort & SPA</span>
-        </a>
-      </h3>
-      <p class="catalog-item-image">
-        <a href="">
-          <img src="" width="" height="" alt="">
-        </a>
-      </p>
-      <span>Гостинница</span>
-      <span>От 4000 Р.</span>
-      <p class="catalog-item-price">
-        <a class="subscription" href="#">Подробнее</a>
-        <a class="button" href="#">Забронировать</a>
-      </p>
+          <div class="catalog-item-rate">
+            <ul class="catalog-item-rate stats">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <span class="catalog-item-rate position">Рейтинг: 8,9</span>
+          </div>
+        </figcaption>
+      </figure>
     </li>
-    <li>
-      <h3>
-        <a href="">
-          <span class="catalog-category">Desert Quail inn</span>
-        </a>
-      </h3>
-      <p class="catalog-item-image">
-        <a href="">
-          <img src="" width="" height="" alt="">
-        </a>
-      </p>
-      <span>Мотель</span>
-      <span>От 3000 Р.</span>
-      <p class="catalog-item-price">
-        <a class="subscription" href="#">Подробнее</a>
-        <a class="button" href="#">Забронировать</a>
-      </p>
-    </li>
-    <li>
-      <h3>
-        <a href="">
-          <span class="catalog-category">Villas at poco diablo</span>
-        </a>
-      </h3>
-      <p class="catalog-item-image">
-        <a href="">
-          <img src="" width="" height="" alt="">
-        </a>
-      </p>
-      <span>Апартаменты</span>
-      <span>От 2000 Р.</span>
-      <p class="catalog-item-price">
-        <a class="subscription" href="#">Подробнее</a>
-        <a class="button" href="#">Забронировать</a>
-      </p>
+    <li class="catalog-item">
+      <figure>
+        <img class="catalog-item-image">
+        <figcaption class="catalog-item-content">
+          <div class="catalog-item-description">
+            <h3 class="catalog-item-title">
+              <a>Vilas at poco diablo</a>
+            </h3>
+            <div class="catalog-item-information">
+              <span class="catalog-item-type">Апартаменты</span>
+              <span class="catalog-item-price">От 2000 Р.</span>
+            </div>
+            <div class="catalog-item-bottom">
+              <a class="catalog-item-subscription" href="">Подробнее</a>
+              <a class="catalog-item-btn" href="">Забронировать</a>
+            </div>
+          </div>
+
+          <div class="catalog-item-rate">
+            <ul class="catalog-item-rate stats">
+              <li></li>
+              <li></li>
+            </ul>
+            <span class="catalog-item-rate position">Рейтинг: 9,2</span>
+          </div>
+        </figcaption>
+      </figure>
     </li>
   </ul>
+
 </main>
 <footer class="main-foter">
-  <p class="footer-info">#VisitSedona</p>
-  <div class="footer-social">
-    <ul>
-      <li><a class="social-button" href="#">Твиттер</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Ютуб</a></li>
+  <a class="hashtag">#VisitSedona</a>
+    <ul class="footer-social-list">
+      <li><a class="footer-social-item" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+      <li><a class="footer-social-item" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      <li><a class="footer-social-item" href="#"><span class="visually-hidden">Ютуб</span></a></li>
     </ul>
-  </div>
-  <p class="footer-copyrigt">
-    <span>Website by</span>
-    <a><img src="">html academy</a>
-  </p>
+  <a class="footer-copyrigt">
+    website by
+    <img>
+    <span class="visually-hidden">html academy</span>
+  </a>
 </footer>
-
 </div>
-  </body>
+</body>
 </html>
