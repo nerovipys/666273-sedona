@@ -9,7 +9,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-logo">
-        <img src="">
+        <img src="img/Logo.png" width="138" height="70" alt="Логотип">
       </a>
       <ul class="nav-list">
         <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
@@ -22,7 +22,7 @@
 
 <main class="container">
   <div class="promo">
-    <img alt="">
+    <img src="img/Sedona.png" width="458" height="352" alt="sedona">
   </div>
   <div class="intro">
     <h1 class="intro-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
@@ -37,7 +37,7 @@
       <span class="reason-info-number">-#1-</span>
       <p class="reason-info-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <img class="reason-item-image" src="" width="" height="" alt="">
+      <img class="reason-item-image" src="img/reason1.jpg" width="" height="" alt="">
       <ul class="advantages-list">
         <li class="advantages-item">
           <h5 class="advantages-item-title">Жилье</h5>
@@ -54,12 +54,13 @@
       </ul>
     </li>
     <li class="reason-item">
-      <img class="reason-item-image" src="" width="" height="" alt="">
+      <img class="reason-item-image" src="img/reason2.jpg" width="" height="" alt="">
       <div class="reason-info">
         <h3 class="reason-info-title">Там есть мост дьявола</h3>
       <span class="reason-info-number">-№2-</span>
       <p class="reason-info-description">Да, по нему можно пройти! Если вы конечно осмелитесь</p>
       </div>
+        <img class="reason-item-image" src="img/reason2.jpg" width="" height="" alt="">
     </li>
     <li class="reason-item reason-item-bottom">
       <h3 class="reason-info-title">Небольшая площадь</h3>
@@ -84,9 +85,33 @@
     <button class="seach-information-btn">
       Поиск гостинницы в Седоне
     </button>
-  </div>
-<div class="map">
+    <form class="seach-form">
+      <div class="seach-form-item">
+        <label for="date-check" >Дата заезда</label>
+        <input type="text" name="date-check" id="date-check" value="" class="seach-form-item item-top">
+      </div>
+      <div class="seach-form-item">
+        <label for="date-out">Дата выезда</label>
+        <input type="text" name="date-out" id="date-out" value="" class="seach-form-item item-center">
+      </div>
+        <div class="seach-form-amount">
+          <div class="seach-form-amount amount-block">
+            <label for="amout">Взрослые</label>
+            <button></button>
+            <input type="number" name="amout" id="amout">
+            <button></button>
+          </div>
+          <div class="seach-form-amount amount-block">
+            <label for="amout">Дети</label>
+            <button></button>
+            <input type="number" name="amout" id="amout">
+            <button></button>
+          </div>
+        </div>
+    </form>
 
+<div class="map">
+  <img src="map.jpg">
 </div>
 
 

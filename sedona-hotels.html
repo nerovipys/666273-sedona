@@ -9,7 +9,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="main-logo">
-        <img src="">
+        <img src="img/Logo.png">
       </a>
       <ul class="nav-list">
         <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
@@ -20,9 +20,41 @@
     </nav>
   </header>
 <main class="container">
-  <div class="hotels-form">
-
-  </div>
+  <form class="hotels-form">
+     <fieldset>
+       <legend>Инфраструктура:</legend>
+       <label for="pool">Бассейн</label>
+       <input type="checkbox" name="pool" id="pool">
+       <label for="parking">Парковка</label>
+       <input type="checkbox" name="parking" id="parking">
+       <label for="Wi-fi">Wi-fi</label>
+       <input type="checkbox" name="Wi-fi" id="Wi-fi">
+     </fildset>
+     <fieldset>
+       <legend>Инфраструктура:</legend>
+       <label for="hotel">Гостинница</label>
+       <input type="checkbox" name="hotel" id="hotel">
+       <label for="motel">Мотель</label>
+       <input type="checkbox" name="motel" id="motel">
+       <label for="apartments">Апартаменты</label>
+       <input type="checkbox" name="apartments" id="apartments">
+     </fildset>
+    <fieldset>
+              <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+          </fieldset>
+  </form>
 
   <div class="filter">
     <b>Найдено: <output>3</output></b>
@@ -32,16 +64,16 @@
       <li class="filter-item"><a href="">По типу</a></li>
       <li class="filter-item"><a href="">По рейтингу</a></li>
     </ul>
-    <ul>
-      <li></li>
-      <li></li>
+    <ul class="arrows">
+      <li class="arrow-up"></li>
+      <li class="arrow-down"></li>
     </ul>
 
   </div>
   <ul class="catalog-list">
     <li class="catalog-item">
       <figure>
-        <img class="catalog-item-image">
+        <img class="catalog-item-image" src="img/catalog-item-img1.jpg">
         <figcaption class="catalog-item-content">
           <div class="catalog-item-description">
             <h3 class="catalog-item-title">
@@ -72,7 +104,7 @@
     </li>
     <li class="catalog-item">
       <figure>
-        <img class="catalog-item-image">
+        <img class="catalog-item-image" src="img/catalog-item-img2.jpg">
         <figcaption class="catalog-item-content">
           <div class="catalog-item-description">
             <h3 class="catalog-item-title">
@@ -101,7 +133,7 @@
     </li>
     <li class="catalog-item">
       <figure>
-        <img class="catalog-item-image">
+        <img class="catalog-item-image" src="img/catalog-item-img3.jpg">
         <figcaption class="catalog-item-content">
           <div class="catalog-item-description">
             <h3 class="catalog-item-title">
