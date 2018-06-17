@@ -10,11 +10,284 @@ src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
 font-weight: bold;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 40px 2px #dbdbdb;
+}
+
+
 .page {
   font-family: "PT Sans", Arial, sans-serif;
-  font-size:
-  line-height:
-  color:
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
   text-transform: uppercase;
   width: 100%;
+  background-image: url(img/background-main.jpg);
+}
+
+.main-navigation {
+  position: relative;
+}
+
+.main-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+.nav-item {
+  text-align: center;
+  width: 20%;
+}
+
+.nav-item:nth-child(2) {
+  margin-right: 20%;
+}
+
+.nav-link {
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.promo {
+  padding-top: 50px;
+  background-color: #81b3d2;
+  background-image: url("../img/background-main.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 1px;
+  background-attachment: fixed;
+}
+
+.promo img {
+  margin: 0 auto;
+}
+
+.intro-title {
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  margin: 65px 282px 30px;
+}
+
+.intro-information {
+  text-align: center;
+  margin: 0;
+}
+
+.reason-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reason-info {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 45px 45px 65px;
+  width: 400px;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+
+}
+
+.reason-info-title {
+  font-size: 21px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.reason-info-description {
+  margin: 0;
+  padding-top: 25px
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item {
+  text-align: center;
+  margin: 0;
+  padding: 161px 48px 9px;
+}
+
+.reason-item-bottom {
+  background: #eeeeee;
+  width: 400px;
+  padding: 50px 70px 65px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.seach-information {
+  text-align: center;
+}
+
+.search-information-promo {
+  margin-top: 57px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-information-text {
+  margin: 0;
+  padding: 35px 105px 52px;
+ }
+
+.seach-information-btn {
+  width: 568px;
+  text-transform: inherit;
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  padding: 34px 0;
+}
+
+.seach-information-btn:hover {
+  background-color: #604e43;
+}
+
+.seach-information-btn:active {
+  background-color: #503e33;
+
+}
+
+.amount-block input,
+.seach-form-item input {
+  background: #f2f2f2;
+  border: none;
+}
+
+
+.seach-form  {
+  font-weight: bold;
+}
+
+.btn.btn-submit {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.hashtag {
+  font-weight: bold;
+}
+/*
+.reason-item {
+  width: 400px;
+  background-color: #81b3d2;
+}
+
+
+
+.btn-submit {
+  font-size: 26px;
+  padding: 17px 195px 22px;
+  background: #81b3d2;
+  color: #ffffff;
+}
+*/
+.hotels-form {
+  background: url("../img/filter background.jpg");
+  color: #ffffff;
+
+}
+.hotels-form legend {
+  font-weight: bold;
+}
+
+.filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-item:first-child a {
+  color: #81b3d2;
+}
+
+.filter-item:not(first-child) a {
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item-subscription {
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-weight: bold;
+  width: 110px;
+}
+
+.catalog-item-btn {
+  background-color: #766357;
+  color: #ffffff;
+}
+
+.catalog-item-btn {
+  font-weight: bold;
+}
+
+.footer-social-list {
+  list-style:none;
+}
+
+.catalog-position {
+  background-color: #f2f2f2;
+  color: #666666;
 }
