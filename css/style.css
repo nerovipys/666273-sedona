@@ -42,9 +42,9 @@ a {
   box-sizing: border-box;
 }
 
-input[type="checkbox"] {
+/*input[type="checkbox"] {
   display:none;
-}
+}*/
 
 .wrapper {
     margin: 0 auto;
@@ -330,8 +330,9 @@ box-sizing: border-box;
   margin: auto;
   display: flex;
   justify-content: center;
-  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  /*box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);*/
   background: #ffffff;
+  z-index: 2;
 }
 
 .search-form-item {
@@ -505,11 +506,11 @@ box-sizing: border-box;
   padding-top: 25px;
 }
 
-.hotels-form-block.middle-block {
+.hotels-form-block.middle-form-block {
   margin-left: 136px;
 }
 
-.hotels-form-block.right-block {
+.hotels-form-block.right-form-block {
   margin-left: auto;
 }
 
@@ -520,7 +521,7 @@ box-sizing: border-box;
   margin-bottom: 25px;
 }
 
-.hotels-form-label::before {
+.field-input-checkbox + .hotels-form-label::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -530,9 +531,29 @@ box-sizing: border-box;
   left: -35px;
 }
 
+.field-input-checkbox:checked + .hotels-form-label::before {
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
+}
+}
+
 .main-footer {
   display: flex;
   align-items: center;
+}
+
+.main-footer-index {
+  position: relative;
+  margin-top: -120px;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+}
+
+.iframe-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .hashtag {
@@ -585,6 +606,14 @@ box-sizing: border-box;
   color: #ffffff;
 }
 */
+.hotels-form-block.left-form-block input[type="checkbox"],
+.hotels-form-block.middle-form-block input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
 .hotels-form {
   background: url("../img/filter background.jpg");
   color: #ffffff;
@@ -630,6 +659,106 @@ box-sizing: border-box;
 .filter-item {
   margin-right: 30px;
 }
+
+.price-controls {
+  width: 330px;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+  position: relative;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
 .arrows {
   display: flex;
   list-style: none;
@@ -655,13 +784,6 @@ box-sizing: border-box;
   border-color: #81b3d2 transparent transparent transparent;
 }
 
-
-.btn-transparent {
-  background: transparent;
-  border: 1px solid #ffffff;
-  padding: 5px 20px;
-  color: #ffffff;
-}
 
 .catalog-list {
   list-style: none;
@@ -703,6 +825,7 @@ img.catalog-item-img {
   padding: 0;
   display: flex;
   justify-content: right;
+  flex-direction: row-reverse;
 }
 
 .catalog-item-stats {
