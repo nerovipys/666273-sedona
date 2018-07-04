@@ -125,9 +125,10 @@ a {
 
 .promo::before {
   content: "";
+  position: absolute;
   bottom: 0;
   left: 0;
-  position: absolute;
+
   width: 100%;
   height: 57px;
   background-image: url("../img/mask.png");
@@ -263,20 +264,19 @@ a {
 }
 
 .advantages-item {
-  text-align: center;
   margin: 0;
   padding: 161px 48px 9px;
   width: 400px;
+  text-align: center;
 }
 
 .reason-item-bottom {
-  background: #eeeeee;
+  flex-direction: column;
   width: 400px;
   padding: 50px 70px 65px;
   margin: 0 auto;
   text-align:center;
-  flex-direction: column;
-
+  background: #eeeeee;
 }
 
 .search-information {
@@ -359,17 +359,17 @@ a {
 }
 
 .form-calendar {
+  display: flex;
   position: absolute;
+  align-items: center;
+  justify-content: center;
   top: 0;
   right: 4px;
   padding: 0;
   width: 38px;
   height: 38px;
-  display: flex;
   border: none;
   background-color: transparent;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -425,9 +425,9 @@ a {
 }
 
 .amount-block-btn {
+  position: relative;
   width: 38px;
   height: 38px;
-  position: relative;
   border: none;
   background: #f2f2f2;
   cursor: pointer;
@@ -504,14 +504,14 @@ a {
 }
 
 .btn.btn-submit {
-  border: none;
+  display: inline-block;
+  padding: 17px;
   width: 458px;
   font-size: 21px;
+  border: none;
   line-height: 26px;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 17px;
-  display: inline-block;
   text-transform: inherit;
 }
 
@@ -530,11 +530,11 @@ a {
 }
 
 .hotels-form-block {
-    border: none;
-    display:flex;
-    flex-wrap: nowrap;
-    padding: 0;
-    margin: 0;
+  display:flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 .hotels-form-subscription {
@@ -559,22 +559,22 @@ a {
 .field-input-checkbox + .hotels-form-label::before {
   content: '';
   position: absolute;
+  left: 0;
+  top: 2px;
   width: 23px;
   height: 23px;
   border: 2px solid #ffffff;
   border-radius: 4px;
-  left: 0;
-  top: 2px;
 }
 
 .field-input-checkbox:checked + .hotels-form-label::before {
+  top: 0;
+  left: -2px;
+  width: 27px;
+  height: 25px;
   border-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
-  width: 27px;
-  height: 25px;
-  top: 0;
-  left: -2px;
 }
 
 .field-input-checkbox:focus+ .hotels-form-label::before {
@@ -698,7 +698,7 @@ a {
 
 .filter-item:not(first-child) a {
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dashed #81b3d2;;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .filter {
@@ -815,7 +815,6 @@ a {
   left: -2px;
   top: -1px;
   background: #ababab;
-
 }
 
 .btn-transparent {
@@ -861,9 +860,9 @@ a {
 }
 
 .arrow-down {
+  display: inline-block;
   width: 0;
   height: 0;
-  display: inline-block;
   margin-right: 3px;
   margin-top: 9px;
   border-style: solid;
@@ -925,12 +924,12 @@ img.catalog-item-img {
 }
 
 .catalog-list-stats {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: right;
   flex-direction: row-reverse;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item-stats {
@@ -942,11 +941,11 @@ img.catalog-item-img {
 }
 
 .catalog-item-description {
-  margin: 0;
-  padding: 0;
-  display:  flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
   margin-left: 33px;
 }
 
@@ -956,6 +955,7 @@ img.catalog-item-img {
   margin-bottom: -10px;
   margin-top: -5px;
   font-size: 21px;
+  cursor: pointer;
 }
 
 .catalog-item-title:hover {
@@ -983,14 +983,15 @@ img.catalog-item-img {
 }
 
 .catalog-item-subscription {
-  background-color: #81b3d2;
-  width: 110px;
-  margin-right: 1px;
-  color: #ffffff;
-  font-weight: bold;
   display: inline-block;
   padding: 0px;
   padding-left: 16px;
+  width: 110px;
+  background-color: #81b3d2;
+
+  margin-right: 1px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .catalog-item-subscription:hover {
