@@ -80,7 +80,6 @@ a {
   text-align: center;
   width: 20%;
   padding: 15px;
-
 }
 
 .nav-item.current a {
@@ -89,6 +88,16 @@ a {
 
 .nav-item a{
   padding: 22px auto;
+  cursor: pointer;
+}
+
+.nav-item a:hover{
+  color: #81b3d2;
+}
+
+.nav-item a:active {
+  color: #000000;
+  opacity: 0.3;
 }
 
 .nav-item:nth-child(2) {
@@ -267,6 +276,7 @@ a {
   margin: 0 auto;
   text-align:center;
   flex-direction: column;
+
 }
 
 .search-information {
@@ -296,6 +306,7 @@ a {
    line-height: 26px;
    border: none;
    font-weight: bold;
+   cursor: pointer;
  }
 
  .search-information-btn:hover {
@@ -376,6 +387,7 @@ a {
 
 .html-logo {
   fill: #000000;
+  cursor: pointer;
 }
 
 .html-logo:hover {
@@ -409,6 +421,7 @@ a {
 
 .btn.btn-submit {
   margin-top: 55px;
+  cursor: pointer;
 }
 
 .amount-block-btn {
@@ -417,6 +430,7 @@ a {
   position: relative;
   border: none;
   background: #f2f2f2;
+  cursor: pointer;
 }
 
 .amount-block-btn::before,
@@ -536,7 +550,6 @@ a {
 }
 
 .hotels-form-label {
-  /* margin-left: 25px; */
   padding-left: 39px;
   position: relative;
   margin-top: 19px;
@@ -611,7 +624,7 @@ a {
   margin-top: 36px;
   margin-bottom: 36px;
   margin-right: 6px;
-
+  cursor: pointer;
 }
 
 .footer-social-item {
@@ -673,7 +686,8 @@ a {
 }
 
 .filter-item a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 1);
+  border: none;
 }
 
 .filter-item:first-child a {
@@ -773,8 +787,8 @@ a {
   top: -9px;
   width: 4px;
   height: 4px;
+  border: 10px solid #ffffff;
   background: #ababab;
-  border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -790,6 +804,18 @@ a {
 
 .range-toggle-max {
   left: 80%;
+}
+
+.range-toggle::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  left: -2px;
+  top: -1px;
+  background: #ababab;
+
 }
 
 .btn-transparent {
