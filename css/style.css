@@ -1,13 +1,31 @@
 @font-face {
-font-family: "PT Sans";
-src: url("../fonts/ptsans.woff2"), url("../fonts/ptsans.woff");
-font-weight: normal;
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2"), url("../fonts/ptsans.woff");
+  font-weight: normal;
 }
 
 @font-face {
-font-family: "PT Sans";
-src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
-font-weight: bold;
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 .visually-hidden {
@@ -22,24 +40,6 @@ font-weight: bold;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .wrapper {
@@ -72,7 +72,7 @@ a {
 .nav-list {
   display: flex;
   padding: 0;
-  margin:0;
+  margin: 0;
   list-style: none;
 }
 
@@ -86,12 +86,12 @@ a {
   color: #766357;
 }
 
-.nav-item a{
+.nav-item a {
   padding: 22px auto;
   cursor: pointer;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
   color: #81b3d2;
 }
 
@@ -149,12 +149,12 @@ a {
 
 .intro-information {
   margin: 0;
-    text-align: center;
+  text-align: center;
   padding-bottom: 50px;
 }
 
 .reason-list {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -172,7 +172,7 @@ a {
 }
 
 .reason-item {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -197,7 +197,7 @@ a {
 }
 
 .reason-item.reason-item-top {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -207,7 +207,7 @@ a {
 }
 
 .advantages-list {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -275,7 +275,7 @@ a {
   width: 400px;
   padding: 50px 70px 65px;
   margin: 0 auto;
-  text-align:center;
+  text-align: center;
   background: #eeeeee;
 }
 
@@ -292,31 +292,31 @@ a {
 .search-information-text {
   margin: 0;
   padding: 22px 349px 44px;
- }
+}
 
- .search-information-btn {
-   width: 570px;
-   margin: 0;
-   padding: 0;
-   padding: 31px 0;
-   text-transform: inherit;
-   background-color: #766357;
-   color: #ffffff;
-   font-size: 21px;
-   line-height: 26px;
-   border: none;
-   font-weight: bold;
-   cursor: pointer;
- }
+.search-information-btn {
+  width: 570px;
+  margin: 0;
+  padding: 0;
+  padding: 31px 0;
+  text-transform: inherit;
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
 
- .search-information-btn:hover {
-   background-color: #604e43;
- }
+.search-information-btn:hover {
+  background-color: #604e43;
+}
 
- .search-information-btn:active {
-   background-color: #503e33;
-   color: rgba(255, 255, 255, 0.3);
- }
+.search-information-btn:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .map {
   position: relative;
@@ -339,7 +339,7 @@ a {
 
 .search-form-item {
   position: relative;
-  display:  flex;
+  display: flex;
   align-items: center;
   padding: 0;
   margin-bottom: 28px;
@@ -415,6 +415,7 @@ a {
   padding-top: 8px;
   margin-right: 26px;
 }
+
 .amount-block:nth-of-type(1) label {
   margin-right: 37px;
 }
@@ -478,7 +479,7 @@ a {
   background: #ffffff;
 }
 
-.search-form-item-field{
+.search-form-item-field {
   padding-left: 15px;
   padding-right: 40px;
 }
@@ -489,7 +490,7 @@ a {
   text-align: center;
 }
 
-.search-form  {
+.search-form {
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -507,6 +508,7 @@ a {
   display: inline-block;
   padding: 17px;
   width: 458px;
+  vertical-align: top;
   font-size: 21px;
   border: none;
   line-height: 26px;
@@ -530,7 +532,7 @@ a {
 }
 
 .hotels-form-block {
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
   padding: 0;
   margin: 0;
@@ -577,7 +579,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.field-input-checkbox:focus+ .hotels-form-label::before {
+.field-input-checkbox:focus + .hotels-form-label::before {
   filter: drop-shadow(0 0 4px #ffffff);
 }
 
@@ -598,6 +600,7 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
+  frameborder: 0;
 }
 
 .hashtag {
@@ -641,7 +644,7 @@ a {
   background: #669ec0;
 }
 
-.footer-copyrigt {
+.footer-copyright {
   display: flex;
   align-items: center;
   width: 200px;
@@ -662,6 +665,7 @@ a {
   color: #ffffff;
 
 }
+
 .hotels-form legend {
   font-weight: bold;
   padding-left: 0px;
@@ -755,7 +759,6 @@ a {
   vertical-align: top;
   cursor: pointer;
 }
-
 
 .price-controls .min-price,
 .price-controls .max-price {
@@ -883,11 +886,11 @@ a {
   border-color: #81b3d2 transparent transparent transparent;
 }
 
-.arrow-up:active
- {
+.arrow-up:active {
   border-color: transparent transparent #81b3d2 transparent;
   opacity: 1;
 }
+
 .catalog-list {
   list-style: none;
   margin: 0;
@@ -925,7 +928,6 @@ img.catalog-item-img {
 
 .catalog-list-stats {
   display: flex;
-  justify-content: right;
   flex-direction: row-reverse;
   list-style: none;
   margin: 0;
@@ -1023,7 +1025,7 @@ img.catalog-item-img {
 }
 
 .footer-social-list {
-  list-style:none;
+  list-style: none;
 }
 
 .catalog-position {
@@ -1033,4 +1035,54 @@ img.catalog-item-img {
   text-align: center;
   background-color: #f2f2f2;
   color: #666666;
+}
+
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate(0, 0%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-51%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-49%);
+  }
+}
+
+.search-form {
+  display: none;
+}
+
+.search-form-active {
+  display: flex;
+  animation-name: show;
+  animation-duration: 0.7s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 1s;
 }
