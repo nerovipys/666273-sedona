@@ -87,7 +87,7 @@ html {
 }
 
 .nav-item a {
-  padding: 22px auto;
+  padding: 22px 0;
   cursor: pointer;
 }
 
